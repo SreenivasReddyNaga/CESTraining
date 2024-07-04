@@ -1,0 +1,180 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TrainingTestSuite">
+
+	<parameter name="browserName" value="Edge"></parameter>
+	<parameter name="url" value="https://demo.guru99.com/test/newtours/index.php"></parameter>
+	<parameter name="userName" value="mercury"></parameter>
+	<parameter name="password" value="mercury"></parameter>
+	<parameter name="excelFilePath" value="src/test/resources/TestData.xlsx"></parameter>
+	<parameter name="sheetName" value="Registration"></parameter>
+
+	<listeners>
+		<listener class-name="org.listeners.Listener"></listener>
+	</listeners>
+
+	<!-- <test name="Understanding TestNg Annotations">
+  <classes>
+	 <class name="org.maven.TestNGAnnotationsDemo"/>
+  </classes>
+</test>
+
+	<test name="Testing mercury login functionality on Edge">
+	<parameter name="browserName" value="Edge"></parameter>
+		<classes>
+			<class name="org.maven.MercuryLoginTest" />
+		</classes>
+	</test>
+	
+	<test name="Testing mercury login functionality on Chrome">
+	<parameter name="browserName" value="Chrome"></parameter>
+		<classes>
+			<class name="org.maven.MercuryLoginTest" />
+		</classes>
+	</test>
+	
+	<test name="Testing mercury login functionality on Firefox">
+	<parameter name="browserName" value="Firefox"></parameter>
+		<classes>
+			<class name="org.maven.MercuryLoginTest" />
+		</classes>
+	</test>
+	
+	
+	<test name="Testing mercury login functionality on Edge">
+	<parameter name="browserName" value="Edge"></parameter>
+		<classes>
+			<class name="org.maven.MercuryLoginTest" />
+		</classes>
+	</test>
+	
+	<test name="Testing mercury registration functionality">
+	<parameter name="browserName" value="Chrome"></parameter>
+		<classes>
+			<class name="org.maven.MercuryRegistrationTest" />
+		</classes>
+	</test>
+	
+	<test name="Testing Alerts functionality">
+	<parameter name="browserName" value="Chrome"></parameter>
+	<parameter name="url" value="https://apdept.meeseva.gov.in/IMeeseva2/UserInterface/IMeeSevaLogin.aspx"></parameter>
+		<classes>
+			<class name="org.maven.HandleAlertsTest" />
+		</classes>
+	</test>
+	
+	
+	<test name="Testing Switch to Windows functionality">
+	<parameter name="browserName" value="Chrome"></parameter>
+	<parameter name="url" value="https://apdept.meeseva.gov.in/Imeeseva2/IMeesevaHome.aspx"></parameter>
+		<classes>
+			<class name="org.maven.SwitchToWindowsTest" />
+		</classes>
+	</test>
+	
+	<test name="Testing Switch to Frames functionality">
+	<parameter name="browserName" value="Chrome"></parameter>
+	<parameter name="url" value="https://www.hyrtutorials.com/p/frames-practice.html"></parameter>
+		<classes>
+			<class name="org.maven.SwitchToFramesTest" />
+		</classes>
+	</test>
+	
+	<test name="Testing WebTable functionality">
+	<parameter name="browserName" value="Chrome"></parameter>
+	<parameter name="url" value="https://www.w3schools.com/html/html_tables.asp"></parameter>
+		<classes>
+			<class name="org.maven.GetWebTableDataTest" />
+		</classes>
+	</test>
+	
+	<test name="Testing mercury registration functionality">
+	<parameter name="browserName" value="Chrome"></parameter>
+		<classes>
+			<class name="org.maven.MercuryRegistrationTest" />
+		</classes>
+	</test>
+	
+	<test name="Testing mercury login functionality on Edge">
+	<parameter name="browserName" value="Chrome"></parameter>
+	<parameter name="sheetName" value="LoginData"></parameter>
+		<classes>
+			<class name="org.maven.MercuryLoginTest">
+			<methods>
+			<include name=""></include>
+			<exclude name=""></exclude>
+			</methods>
+			</class>			
+		</classes>
+	</test>
+	<test name="Testing mercury login functionality on Edge">
+	<parameter name="browserName" value="Chrome"></parameter>
+	<parameter name="sheetName" value="LoginData"></parameter>
+		<classes>
+			<class name="org.maven.MercuryLoginTest" />
+		</classes>
+	</test>
+	<test name="Testing mercury login functionality on Edge">
+	<parameter name="browserName" value="Chrome"></parameter>
+	<parameter name="sheetName" value="LoginData"></parameter>
+		<classes>
+			<class name="org.maven.MercuryLoginTest" />
+		</classes>
+	</test>
+	
+	<test name="Testing Selenium Actions Class">
+	<parameter name="browserName" value="Chrome"></parameter>
+	
+		<classes>
+			<class name="org.maven.SeriesOfActions" />
+		</classes>
+	</test>
+	
+	<test name="Testing Java script executor">
+	<parameter name="browserName" value="Chrome"></parameter>
+	<parameter name="url" value="https://www.google.co.in/"></parameter>
+	
+		<classes>
+			<class name="org.maven.JsExecutorTest" />
+		</classes>
+	</test>
+	
+	<test name="Testing Java script executor">
+	<parameter name="browserName" value="Chrome"></parameter>
+	<parameter name="url" value="https://www.google.co.in/"></parameter>	
+		<classes>
+			<class name="org.maven.TakeScreenShotTest" />
+		</classes>
+	</test>
+	
+	<test name="Testing Java script executor">
+	<parameter name="browserName" value="Chrome"></parameter>
+	<parameter name="url" value="https://www.google.co.in/"></parameter>
+	
+		<classes>
+			<class name="org.maven.JsExecutorTest" />
+		</classes>
+	</test>
+	
+	<test name="Testing mercury registration functionality">
+	<parameter name="browserName" value="Chrome"></parameter>
+		<classes>
+			<class name="org.maven.MercuryRegistrationTest" />
+		</classes>
+	</test>
+	
+	<test name="Testing mercury registration functionality">
+	<parameter name="browserName" value="Chrome"></parameter>
+	<parameter name="url" value="https://www.w3schools.com/html/html_tables.asp"></parameter>
+		<classes>
+			<class name="org.maven.StaleElementReferenceExceptionTest" />
+		</classes>
+	</test>-->
+
+	<test name="Testing mercury flight search functionality">
+		<parameter name="browserName" value="Chrome"></parameter>
+		<classes>
+			<class name="org.pagefactory.tests.FindFlightsTest" />
+		</classes>
+	</test>
+
+</suite>
