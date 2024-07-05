@@ -41,15 +41,15 @@ public class FindFlightsTest extends BaseClass {
 		flightsSearchPage = new FlightsSearchPage(driver);
 
 		loginPage.login("mercury", "mercury");
-
+		extentTest.log(Status.INFO, "Testing the logging");
 		extentTest.log(Status.PASS, "User able to login in to application");
 		homePage.clickOnFlights();
 		extentTest.log(Status.PASS, "User able to navigate to search flights page");
 		flightsSearchPage.findFlights("Business");
-		extentTest.log(Status.INFO, "Testing the logging");
+		
 		flightsSearchPage.clickOnContinue();
 		extentTest.log(Status.PASS, "User able to enter details in search flights page");
-
+		extentTest.log(Status.INFO, "Testing the logging");
 		assertTrue(webDriverUtils.isTextPresent("After flight finder - No Seats Avaialble"),
 				"Expected Text not present");
 		extentTest.log(Status.FAIL, "User able to search the flight");
