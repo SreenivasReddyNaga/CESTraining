@@ -44,6 +44,8 @@ public class FindFlightsTest extends BaseClass {
 		extentTest.log(Status.INFO, "Testing the logging");
 		extentTest.log(Status.PASS, "User able to login in to application");
 		homePage.clickOnFlights();
+		driver.navigate().refresh();
+		homePage.clickOnFlights();
 		extentTest.log(Status.PASS, "User able to navigate to search flights page");
 		flightsSearchPage.findFlights("Business");
 		
