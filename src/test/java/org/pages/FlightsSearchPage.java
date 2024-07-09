@@ -15,7 +15,7 @@ public class FlightsSearchPage {
 	@FindBy(name="tripType")
 	private WebElement tripTypeElement;
 	
-	@FindBy(name="passCount")
+	@FindBy(name="passgcbcv")
 	private WebElement passCountElement;
  
 	@FindBy(name="fromPort")
